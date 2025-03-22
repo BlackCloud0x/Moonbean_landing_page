@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonbean - Where Astrology Meets AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#7c3aed',
+                            light: '#9a68fb',
+                            dark: '#5b21b6'
+                        },
+                        secondary: {
+                            DEFAULT: '#0f172a',
+                            dark: '#0a0f1d'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --primary-default: #7c3aed;
+            --primary-light: #9a68fb;
+            --primary-dark: #5b21b6;
+            --secondary-default: #0f172a;
+            --secondary-dark: #0a0f1d;
+            --accent-yellow: #fbbf24;
+            --accent-blue: #60a5fa;
+            --accent-purple: #a78bfa;
+        }
+        
+        body {
+            background-color: var(--secondary-default);
+            background-image: radial-gradient(circle at 15% 50%, rgba(30, 41, 59, 0.7) 0%, transparent 25%),
+                             radial-gradient(circle at 85% 30%, rgba(30, 41, 59, 0.7) 0%, transparent 25%);
+            background-size: 100% 100%;
+            background-position: center;
+        }
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="font-sans min-h-screen text-white">
+    <!-- Star background -->
+    <div id="stars" class="fixed inset-0 z-0 overflow-hidden"></div>
+
+    <!-- Navigation -->
+    <nav class="container mx-auto px-4 py-6 flex justify-between items-center relative z-10">
+        <div class="text-2xl font-bold">Moonbean</div>
+        <div class="space-x-6 hidden md:flex">
+            <a href="#features" class="hover:text-primary-light transition">Features</a>
+            <a href="#about" class="hover:text-primary-light transition">About</a>
+            <a href="#contact" class="hover:text-primary-light transition">Contact</a>
+        </div>
+        <a href="#waitlist" class="bg-primary hover:bg-primary-light text-white px-5 py-2 rounded-full transition">Join Waitlist</a>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="container mx-auto px-4 py-20 text-center relative z-10">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Where Astrology Meets AI<br>Companionship and Social Gifting</h1>
+        <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-12 opacity-90">
+            Make life decisions with your own celestial AI companion and crowdsource
+            advices from your Zodiac community
+        </p>
+        <button class="bg-primary hover:bg-primary-light text-white px-8 py-3 rounded-full text-lg shadow-lg transition">
+            Coming soon
+        </button>
+
+        <!-- Circular astrology icon -->
+        <div class="w-64 h-64 mx-auto mt-16 relative">
+            <div class="absolute inset-0 bg-secondary-dark bg-opacity-50 rounded-full"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <svg class="w-20 h-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2"/>
+                    <path d="M12 6V12L16 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <!-- Floating astrological symbols -->
+            <div class="absolute top-1/4 right-0 transform translate-x-1/2">
+                <svg class="w-6 h-6" style="color: var(--accent-yellow);" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+            </div>
+            <div class="absolute bottom-1/4 left-0 transform -translate-x-1/2">
+                <svg class="w-6 h-6" style="color: var(--primary-light);" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            <div class="absolute bottom-0 right-1/4 transform translate-y-1/2">
+                <svg class="w-6 h-6" style="color: var(--accent-blue);" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features section -->
+    <section id="features" class="container mx-auto px-4 py-20 relative z-10">
+        <div class="text-center mb-16">
+            <div class="inline-block px-3 py-1 rounded-full bg-primary bg-opacity-10 text-primary mb-4">Features</div>
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">Cosmic Insights at Your Fingertips</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
+                Moonbean combines ancient astrological wisdom with cutting-edge AI to deliver personalized celestial guidance.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- AI Companion -->
+            <div class="bg-secondary bg-opacity-40 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:translate-y-[-4px] transition duration-300">
+                <div class="bg-primary bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">AI Companion</h3>
+                <p class="opacity-90">
+                    Chat with your personal AI astrologer for guidance, insights, and answers to your cosmic questions.
+                </p>
+            </div>
+
+            <!-- Star Tribe -->
+            <div class="bg-secondary bg-opacity-40 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:translate-y-[-4px] transition duration-300">
+                <div class="bg-primary bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Star Tribe</h3>
+                <p class="opacity-90">
+                    Connect with like-minded individuals in our community of astrology enthusiasts.
+                </p>
+            </div>
+
+            <!-- Natal Charts -->
+            <div class="bg-secondary bg-opacity-40 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:translate-y-[-4px] transition duration-300">
+                <div class="bg-primary bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Natal Charts</h3>
+                <p class="opacity-90">
+                    Generate accurate birth charts with detailed interpretations of planetary positions and aspects.
+                </p>
+            </div>
+
+            <!-- Daily Horoscopes -->
+            <div class="bg-secondary bg-opacity-40 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:translate-y-[-4px] transition duration-300">
+                <div class="bg-primary bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Daily Horoscopes</h3>
+                <p class="opacity-90">
+                    Receive personalized daily forecasts with actionable advice based on your unique astrological profile.
+                </p>
+            </div>
+
+            <!-- Detailed Reports -->
+            <div class="bg-secondary bg-opacity-40 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:translate-y-[-4px] transition duration-300">
+                <div class="bg-primary bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Detailed Reports</h3>
+                <p class="opacity-90">
+                    Access comprehensive astrological reports on love, career, and personal growth tailored to your chart.
+                </p>
+            </div>
+
+            <!-- Moon Phases -->
+            <div class="bg-secondary bg-opacity-40 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:translate-y-[-4px] transition duration-300">
+                <div class="bg-primary bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Moon Phases</h3>
+                <p class="opacity-90">
+                    Track lunar cycles and receive guidance on the best times for manifestation and personal rituals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="container mx-auto px-4 py-20 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">Celestial Journey</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
+                Join thousands of seekers who have discovered cosmic clarity through Moonbean.
+            </p>
+        </div>
+
+        <!-- Waitlist form -->
+        <div id="waitlist" class="max-w-lg mx-auto bg-secondary bg-opacity-40 rounded-xl p-8 backdrop-blur-sm shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Join Our Waitlist</h3>
+            <p class="mb-6 opacity-90">Be the first to experience Moonbean when we launch.</p>
+            <form class="space-y-4">
+                <div>
+                    <input type="email" placeholder="Your email address" class="w-full px-4 py-3 rounded-lg bg-secondary-dark bg-opacity-50 border border-gray-700 focus:border-primary focus:outline-none">
+                </div>
+                <div>
+                    <select class="w-full px-4 py-3 rounded-lg bg-secondary-dark bg-opacity-50 border border-gray-700 focus:border-primary focus:outline-none">
+                        <option value="" disabled selected>Your zodiac sign</option>
+                        <option value="aries">Aries</option>
+                        <option value="taurus">Taurus</option>
+                        <option value="gemini">Gemini</option>
+                        <option value="cancer">Cancer</option>
+                        <option value="leo">Leo</option>
+                        <option value="virgo">Virgo</option>
+                        <option value="libra">Libra</option>
+                        <option value="scorpio">Scorpio</option>
+                        <option value="sagittarius">Sagittarius</option>
+                        <option value="capricorn">Capricorn</option>
+                        <option value="aquarius">Aquarius</option>
+                        <option value="pisces">Pisces</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-primary hover:bg-primary-light text-white px-6 py-3 rounded-lg transition">
+                    Join Waitlist
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-4 py-10 border-t border-gray-800 mt-20 relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <div class="text-2xl font-bold mb-2">Moonbean</div>
+                <p class="opacity-70">Astrological wisdom meets AI innovation</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="opacity-70 hover:opacity-100 transition">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                </a>
+                <a href="#" class="opacity-70 hover:opacity-100 transition">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="#" class="opacity-70 hover:opacity-100 transition">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="text-center mt-8 opacity-70 text-sm">
+            &copy; 2023 Moonbean. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Create stars in the background
+        const starsContainer = document.getElementById('stars');
+        const starsCount = 100;
+        
+        for (let i = 0; i < starsCount; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = `${Math.random() * 100}%`;
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.width = `${Math.random() * 2 + 1}px`;
+            star.style.height = star.style.width;
+            star.style.opacity = `${Math.random() * 0.7 + 0.3}`;
+            starsContainer.appendChild(star);
+        }
+
+        // Simple animation for stars twinkling
+        const stars = document.querySelectorAll('.star');
+        setInterval(() => {
+            stars.forEach(star => {
+                star.style.opacity = `${Math.random() * 0.7 + 0.3}`;
+            });
+        }, 2000);
+    </script>
+</body>
+</html> 

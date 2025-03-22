@@ -1,0 +1,21 @@
+{
+  "name": "moonbean-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for Moonbean AI-powered astrology app",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve"
+  },
+  "keywords": [
+    "astrology",
+    "ai",
+    "landing-page",
+    "tailwind"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+} 
