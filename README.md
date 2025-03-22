@@ -36,4 +36,26 @@ The design follows these principles:
 - Clear information hierarchy
 - Natural focus on core functionalities
 - Refined rounded corners
-- Delicate micro-interactions 
+- Delicate micro-interactions
+
+## Local Development
+
+To run this project locally:
+
+1. Clone this repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+4. Open http://localhost:3000 in your browser
+
+## Deployment
+
+This site is deployed on GitHub Pages. To deploy your own version:
+
+1. Fork this repository
+2. Enable GitHub Pages in your repository settings
+3. Set the branch to `main` and folder to `/ (root)`
+4. Your site will be available at `https://[your-username].github.io/Moonbean_landing_page/`
+
+## Credits
+
+Designed and developed by Vu Phuong 
