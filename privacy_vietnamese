@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách Quyền riêng tư - Ứng dụng Moonbean</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1, h2 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: .3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chính sách Quyền riêng tư cho Ứng dụng Moonbean</h1>
+    <p><strong>Cập nhật lần cuối:</strong> Ngày 1 tháng 7 năm 2025</p>
+
+    <p>Chính sách quyền riêng tư này điều chỉnh việc bạn sử dụng ứng dụng phần mềm Moonbean (“Ứng dụng”) cho thiết bị di động. Chính sách này mô tả những thông tin mà Ứng dụng có thể thu thập và cách thông tin đó được sử dụng.</p>
+
+    <h2>Ứng dụng thu thập thông tin gì và thông tin đó được sử dụng như thế nào?</h2>
+    
+    <h3>Thông tin do người dùng cung cấp</h3>
+    <p>Ứng dụng thu thập thông tin bạn cung cấp khi bạn tải xuống và đăng ký Ứng dụng. Việc đăng ký là tùy chọn. Tuy nhiên, xin lưu ý rằng bạn có thể không sử dụng được một số tính năng của Ứng dụng trừ khi bạn đăng ký với chúng tôi.</p>
+    <p>Khi bạn đăng ký và sử dụng Ứng dụng, bạn thường cung cấp:</p>
+    <ul>
+        <li>Tên, địa chỉ email, tên người dùng, mật khẩu và thông tin đăng ký khác của bạn;</li>
+        <li>Thông tin bạn cung cấp khi liên hệ với chúng tôi để được trợ giúp;</li>
+        <li>Thông tin bạn nhập vào hệ thống của chúng tôi khi sử dụng Ứng dụng, chẳng hạn như ghi chú cá nhân hoặc nhật ký.</li>
+    </ul>
+
+    <h3>Thông tin được thu thập tự động</h3>
+    <p>Ngoài ra, Ứng dụng có thể thu thập một số thông tin nhất định một cách tự động, bao gồm nhưng không giới hạn ở:</p>
+    <ul>
+        <li><strong>Dữ liệu Sử dụng:</strong> Thông tin về cách bạn tương tác với ứng dụng, chẳng hạn như số lần khởi chạy ứng dụng, các lần nhấn, nhấp chuột và hoạt động khác của người dùng. Điều này giúp chúng tôi cải thiện trải nghiệm người dùng.</li>
+        <li><strong>Dữ liệu Chẩn đoán:</strong> Chúng tôi có thể thu thập báo cáo sự cố và dữ liệu hiệu suất (ví dụ: thời gian khởi chạy, tỷ lệ treo máy) để xác định và sửa lỗi cũng như cải thiện hiệu suất của Ứng dụng.</li>
+        <li><strong>Dữ liệu Thiết bị:</strong> Chúng tôi có thể thu thập thông tin về loại thiết bị di động bạn sử dụng và hệ điều hành di động của bạn. Chúng tôi không thu thập các định danh thiết bị duy nhất (như UDID hoặc IMEI).</li>
+    </ul>
+
+    <h2>Chúng tôi sử dụng thông tin của bạn như thế nào</h2>
+    <p>Chúng tôi sử dụng thông tin thu thập được để vận hành, duy trì và cung cấp cho bạn các tính năng và chức năng của Ứng dụng. Chúng tôi có thể sử dụng thông tin để:</p>
+    <ul>
+        <li>Cá nhân hóa trải nghiệm của bạn;</li>
+        <li>Liên lạc với bạn, bao gồm cả việc hỗ trợ khách hàng;</li>
+        <li>Theo dõi và cải thiện Ứng dụng của chúng tôi;</li>
+        <li>Chẩn đoán và khắc phục các sự cố công nghệ.</li>
+    </ul>
+
+    <h2>Ứng dụng có chia sẻ thông tin của tôi với bên thứ ba không?</h2>
+    <p>Chúng tôi không bán, trao đổi hoặc cho thuê thông tin nhận dạng cá nhân của bạn cho người khác. Chúng tôi chỉ có thể chia sẻ thông tin với các bên thứ ba theo những cách được mô tả trong tuyên bố về quyền riêng tư này:</p>
+    <ul>
+        <li>Theo yêu cầu của pháp luật, chẳng hạn như để tuân thủ trát đòi hầu tòa hoặc quy trình pháp lý tương tự;</li>
+        <li>Khi chúng tôi tin tưởng một cách thiện chí rằng việc tiết lộ là cần thiết để bảo vệ quyền của chúng tôi, bảo vệ sự an toàn của bạn hoặc sự an toàn của người khác, điều tra gian lận hoặc đáp ứng yêu cầu của chính phủ;</li>
+        <li>Với các nhà cung cấp dịch vụ đáng tin cậy của chúng tôi, những người làm việc thay mặt chúng tôi, không được phép sử dụng độc lập thông tin mà chúng tôi tiết lộ cho họ và đã đồng ý tuân thủ các quy tắc được nêu trong tuyên bố về quyền riêng tư này.</li>
+    </ul>
+
+    <h2>Chính sách Lưu giữ Dữ liệu, Quản lý Thông tin của bạn</h2>
+    <p>Chúng tôi sẽ giữ lại Dữ liệu do Người dùng cung cấp trong suốt thời gian bạn sử dụng Ứng dụng và trong một khoảng thời gian hợp lý sau đó. Nếu bạn muốn chúng tôi xóa Dữ liệu do Người dùng cung cấp mà bạn đã cung cấp qua Ứng dụng, vui lòng liên hệ với chúng tôi tại <strong>[phuongvu57@gmail.com]</strong> và chúng tôi sẽ phản hồi trong thời gian hợp lý. Xin lưu ý rằng một số hoặc tất cả Dữ liệu do Người dùng cung cấp có thể được yêu cầu để Ứng dụng hoạt động bình thường.</p>
+
+    <h2>Quyền riêng tư của Trẻ em</h2>
+    <p>Chúng tôi không sử dụng Ứng dụng để cố ý thu thập dữ liệu từ hoặc tiếp thị cho trẻ em dưới 13 tuổi. Nếu cha mẹ hoặc người giám hộ biết rằng con của họ đã cung cấp thông tin cho chúng tôi mà không có sự đồng ý của họ, họ nên liên hệ với chúng tôi tại <strong>[phuongvu57@gmail.com]</strong>. Chúng tôi sẽ xóa thông tin đó khỏi hồ sơ của mình trong thời gian hợp lý.</p>
+
+    <h2>Sự đồng ý của bạn</h2>
+    <p>Bằng cách sử dụng Ứng dụng, bạn đồng ý cho chúng tôi xử lý thông tin của bạn như được quy định trong Chính sách Quyền riêng tư này hiện tại và có thể được chúng tôi sửa đổi.</p>
+
+    <h2>Liên hệ chúng tôi</h2>
+    <p>Nếu bạn có bất kỳ câu hỏi nào về quyền riêng tư khi sử dụng Ứng dụng hoặc có câu hỏi về các thông lệ của chúng tôi, vui lòng liên hệ với chúng tôi qua email tại <strong>[phuongvu57@gmail.com]</strong>.</p>
+    
+</body>
+</html>
